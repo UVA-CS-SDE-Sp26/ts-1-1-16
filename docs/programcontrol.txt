@@ -9,18 +9,41 @@ Be the "glue" for the teammates to connect their code together
 
 PSUEDOCODE:
 
+public ProgramController {
+    # contructor for role C and C
+    FileHandler
+    Cipher
+}
 public void listFiles()
     try{
-
-    } catch (){
-
+        get files
+        if no files then print no files
+        loop to print the file names and formatted correctly
+    } catch (execption e){
+        prompt error
     }
 
-public void displayFile
+public void displayFile(fileNum, keyNum){
+    try {
+        get the array of files
+        check input to see if the index is in the array
+        read the file selected by the user
+        if (no key){
+            read raw text file
+        } else {
+            read text file with key
+        }
+    } catch (NumberFormatExecption){
+        print enter in a number
+    } catch (execption e){
+        print error
+    }
+}
 
-TESTS
-if zero arguments, then should list the numbered files available
-if one valid argument, then should open correct value at the index given by that argument
-if two valid arguments, then should open a correct file and use the key given by user's second arg
+Test cases:
+Be able to attain the files through FileHandler
+Be able to display the array of file names
+Be able to print/read the text files
+Be able to print/read the text files with key
+Be able to check valid user inputs and catch errors.
 
-if invalid arguments, then should reprompt the user
