@@ -1,12 +1,11 @@
 /**
- * Commmand Line Utility
+ * Command Line Utility
  */
-package topsecret;
 
 public class TopSecret {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Command command = parseArguments(args);
-        switch (command.getType()){
+        switch (command.getType()) {
             case list_files:
                 System.out.println("Listing files...");
                 break;
@@ -20,8 +19,8 @@ public class TopSecret {
         }
     }
 
-    public static Command parseArguments(String[] args){
-        if (args.length == 0){
+    public static Command parseArguments(String[] args) {
+        if (args.length == 0) {
             return Command.list();
         }
         if (args.length > 2) {
@@ -29,11 +28,11 @@ public class TopSecret {
         }
         String fileNumber = args[0];
 
-        if (!fileNumber.matches("\\d{2}")){
+        if (!fileNumber.matches("\\d{2}")) {
             return Command.error("invalid file number");
         }
         String key = "default";
-        if (args.length ==2){
+        if (args.length == 2) {
             key = args[1];
         }
         return Command.show(fileNumber, key);
