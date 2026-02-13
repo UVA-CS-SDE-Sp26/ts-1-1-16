@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11d74008-8339-4675-89e0-143d7228c8cb" name="Changes" comment="finished">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fileRead/TopSecret.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="11d74008-8339-4675-89e0-143d7228c8cb" name="Changes" comment="added:&#10;- cipher utility class, tests, docs&#10;- test data (data/)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProgramController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileRead/ProgramController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TopSecret.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TopSecret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TopSecret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileRead/ProgramController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileRead/fileHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ProgramControllerTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ProgramControllerTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +41,13 @@
   }
 }</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-9.2.0-bin/11i5gvueggl8a5cioxuftxrik/gradle-9.2.0" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-25.0.2/Contents/Home" gradleVersion="9.2.0" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.ts-1-1-16 [:TopSecret.main()].executor": "Run",
     "Gradle.ts-1-1-16 [:fileRead.TopSecret.main()].executor": "Run",
     "git-widget-placeholder": "main"
   }
