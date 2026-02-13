@@ -1,16 +1,18 @@
 import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.*;
-public class TopSecretTest {
+
+class TopSecretTest {
+
     @Test
-    void shouldCallRunOnProgramController(){
+    void start_delegatesToControllerRun() {
+        ProgramController controller = mock(ProgramController.class);
+        TopSecret app = new TopSecret(controller);
 
-        ProgramController mockController = mock(ProgramController.class);
-        when(mockController.run(any())).thenReturn("Test Output");
+        String[] args = {"01"};
 
-        TopSecret topSecret = new TopSecret(mockController);
-        String[] args = {"1"};
-        topSecret.start(args);
-        verify(mockController).run(args);
+        app.start(args);
+
+        verify(controller).run(args);
     }
 }
