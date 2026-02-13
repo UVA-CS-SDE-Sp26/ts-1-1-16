@@ -44,7 +44,7 @@ public class FileHandler {
         return fileNames;
     }
 
-    public String readFile(String fileName) {
+    public String readFile(String fileName, String keyFile) {
         String fileContents = "";
         File file = new File(filesFolder + File.separator + fileName);
         //create file object for targetted file. get file path with File.seperator.
@@ -79,7 +79,15 @@ public class FileHandler {
 
         if(fileName.toLowerCase().endsWith(".cip")){
             try{
-                Cipher cipher = new Cipher();
+                Cipher cipher;
+                if(keyFile != null){
+                    cipher = new Cipher("ciphers/" + keyFile);
+                }
+                else{
+                    cipher = new Cipher();
+                }
+                //check which key to use based on number of arguments passed.
+
                 fileContents = cipher.decrypt(fileContents);
                 //set the string to decrypted contents
             }
