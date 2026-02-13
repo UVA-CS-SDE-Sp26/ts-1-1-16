@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11d74008-8339-4675-89e0-143d7228c8cb" name="Changes" comment="added cypher feature">
+    <list default="true" id="11d74008-8339-4675-89e0-143d7228c8cb" name="Changes" comment="finished fileHander.java">
+      <change afterPath="$PROJECT_DIR$/src/test/java/fileHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fileHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fileHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TopSecretTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TopSecretTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,16 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -27,35 +40,24 @@
     &quot;assignee&quot;: &quot;rith-1&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/varunK212/ts-1-1-16-HW2-.git",
-    "accountId": "f8f10bca-dfd7-4315-8087-b42a70cc0917"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rith-1/ts-1-1-16&quot;,
+    &quot;accountId&quot;: &quot;f1905f06-a092-4a2a-bc35-dc0cddfd325d&quot;
   }
-}]]></component>
+}</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-9.2.0-bin/11i5gvueggl8a5cioxuftxrik/gradle-9.2.0" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-25.0.2/Contents/Home" gradleVersion="9.2.0" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="39cg6cFrMUQvVCSa9pd4K7GhrVC" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TopSecret.executor": "Run",
-    "Gradle.Build ts-1-1-16-HW2-.executor": "Run",
-    "Gradle.CipherTest.executor": "Run",
-    "Gradle.fileHandlerTest.executor": "Run",
-    "Gradle.ts-1-1-16 [:fileRead.TopSecret.main()].executor": "Run",
-    "Gradle.ts-1-1-16-HW2- [:TopSecret.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build ts-1-1-16.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TopSecretTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ts-1-1-16 [:TopSecret.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ts-1-1-16 [:fileRead.TopSecret.main()].executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }]]></component>
   <component name="RecentsManager">
@@ -64,39 +66,81 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="TopSecret" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="TopSecret" />
-      <module name="TopSecret.main" />
-      <option name="PROGRAM_PARAMETERS" value="2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="TopSecretTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TopSecretTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
-      </set>
-    </attachedChunks>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TopSecretTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="added cypher feature">
+    <task id="LOCAL-00001" summary="finished">
       <option name="closed" value="true" />
-      <created>1770953634688</created>
+      <created>1770949140122</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1770953634689</updated>
+      <updated>1770949140122</updated>
     </task>
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="11d74008-8339-4675-89e0-143d7228c8cb" name="Changes" comment="added cypher feature" />
-      <created>1771000601024</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1771000601024</updated>
+    <task id="LOCAL-00002" summary="finished">
+      <option name="closed" value="true" />
+      <created>1770949409698</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770949409698</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00003" summary="fixed some stuff">
+      <option name="closed" value="true" />
+      <created>1770949817762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770949817762</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finished">
+      <option name="closed" value="true" />
+      <created>1770951143719</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770951143719</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finished">
+      <option name="closed" value="true" />
+      <created>1770953302769</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770953302769</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,9 +163,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added cypher feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cypher feature" />
   </component>
 </project>
